@@ -1,4 +1,4 @@
-package payroll;
+package org.springframework.guides.payroll;
 
 class EmployeeNotFoundException extends RuntimeException {
 
