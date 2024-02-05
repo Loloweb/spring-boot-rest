@@ -2,18 +2,17 @@ package org.springframework.guides.payroll.payroll;
 
 import java.util.Objects;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
 
 @Entity
+@Table(name = "employees")
 class Employee {
 
-	private @Id @GeneratedValue Long id;
+	private @Id @GeneratedValue(strategy = GenerationType.IDENTITY) Long id;
 	private String name;
 	private String role;
 
-	Employee() {}
+	public Employee() {}
 
 	Employee(String name, String role) {
 
