@@ -1,4 +1,4 @@
-package org.springframework.guides.payroll;
+package org.springframework.guides.payroll.payroll;
 
 import java.util.Objects;
 

@@ -1,12 +1,11 @@
 package org.springframework.guides.payroll;
 
-import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class PayrollApplication {
+public class SpringApplication {
 
 	public static void main(String... args) {
-		SpringApplication.run(PayrollApplication.class, args);
+		org.springframework.boot.SpringApplication.run(SpringApplication.class, args);
 	}
 }

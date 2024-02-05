@@ -1,4 +1,4 @@
-package org.springframework.guides.payroll;
+package org.springframework.guides.payroll.payroll;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 
