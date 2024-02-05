@@ -61,7 +61,12 @@ class EmployeeController {
 				linkTo(methodOn(EmployeeController.class).one(id)).withSelfRel(),
 				linkTo(methodOn(EmployeeController.class).all()).withRel("employees"));
 	}
-	// end::get-single-item[]
+	// end::get-single-item
+
+	@GetMapping("/employees/search/{name}")
+	Employee findEmployeeByName(@PathVariable String name) {
+		return repository.findByNameContaining(name);
+	}
 
 	@PutMapping("/employees/{id}")
 	Employee replaceEmployee(@RequestBody Employee newEmployee, @PathVariable Long id) {
